@@ -9,7 +9,7 @@ import Avatar from '@mui/material/Avatar';
 function NavBar() {
 
   return (
-    <Popover className="relative bg-darkBlue shadow-md">
+    <Popover className="fixed top-0 left-0 right-0 shadow-md bg-darkBlue">
         <div className='max-w-7xl mx-auto px-4 sm:px-6'>
             <div className='flex justify-between items-center
             py-6 md:justify-start md:space-x-10'>
@@ -62,10 +62,7 @@ function NavBar() {
                         <div className='pt-5 pb-6 px-5'>
                             <div className='flex items-center justify-between'>
                                 <div>
-                                    <img 
-                                        className='h-8 w-auto'
-                                        src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600" 
-                                    />
+                                    <Avatar size={25} color="#DCDFEE" />
                                 </div>
 
                                 <div className='-mr-2'>
