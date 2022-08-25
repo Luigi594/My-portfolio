@@ -43,7 +43,7 @@ function Projects() {
   
   return (
 
-    <div className='h-auto bg-darkBlue text-lightWhite p-14'>
+    <div className='h-auto text-lightWhite p-14'>
 
       {/** Este es el título */}
       <div className='flex w-full items-center justify-evenly'>
@@ -53,12 +53,12 @@ function Projects() {
 
        {/** Contenido */}
        <div className='md:p-10'>
-        <p className='text-xl font-normal mt-12 text-center lg:text-left'>
-            Here you will find some significant projects I built throughout my career.
-            Also other of them were built from my own for self-taught and to
-            increase my knowledge.
-        </p>
-      </div>
+          <p className='text-xl font-normal mt-12 text-center lg:text-left'>
+              Here you will find some significant projects I built throughout my career.
+              Also other of them were built from my own for self-taught and to
+              increase my knowledge.
+          </p>
+        </div>
       
       <div className="container relative flex items-center overflow-auto mt-10">
         <div className="flex flex-nowrap gap-4">
@@ -84,9 +84,7 @@ function Projects() {
                         ))}
                       </div>
                     </div>
-                </div>
-
-                
+                </div>              
             </div>
           ))}
         </div>

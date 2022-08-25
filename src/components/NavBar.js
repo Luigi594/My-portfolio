@@ -4,12 +4,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import BedtimeIcon from '@mui/icons-material/Bedtime';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
 
 function NavBar() {
 
   return (
-    <Popover className="fixed top-0 left-0 right-0 shadow-md bg-darkBlue">
+    <Popover className="fixed top-0 left-0 right-0 z-50 shadow-md bg-darkBlue">
         <div className='max-w-7xl mx-auto px-4 sm:px-6'>
             <div className='flex justify-between items-center
             py-6 md:justify-start md:space-x-10'>
@@ -30,15 +31,20 @@ function NavBar() {
 
                 <Popover.Group as="nav" className='hidden md:flex space-x-10'>
                     
-                    <a href="#" className='text-base font-medium text-lightWhite'>About</a>
-                    <a href="#" className='text-base font-medium text-lightWhite'>Skills</a>
-                    <a href="#" className='text-base font-medium text-lightWhite'>Projects</a>
-                    <a href="#" className='text-base font-medium text-lightWhite'>Contact</a>
+                    <a href="#" className='text-base font-medium text-lightWhite hover:text-ligthGray transition ease-in-out duration-200'>About</a>
+                    <a href="#" className='text-base font-medium text-lightWhite hover:text-ligthGray transition ease-in-out duration-200'>Skills</a>
+                    <a href="#" className='text-base font-medium text-lightWhite hover:text-ligthGray transition ease-in-out duration-200'>Projects</a>
+                    <a href="#" className='text-base font-medium text-lightWhite hover:text-ligthGray transition ease-in-out duration-200'>Contact</a>
                 </Popover.Group>
 
                 <div className='hidden itms-center justify-end lg:w-0 space-x-4 md:flex md:flex-1'>
-                    <BedtimeIcon size={24} className='text-darkGray cursor-pointer  hover:text-lightWhite' />
-                    <LightModeIcon size={24} className='text-darkGray cursor-pointer  hover:text-lightWhite' />
+                    <IconButton>
+                        <BedtimeIcon fontSize='medium' className='cursor-pointer dark:text-lightWhite text-darkBlue' />
+                    </IconButton>
+
+                    <IconButton>
+                        <LightModeIcon fontSize='medium' className='cursor-pointer dark:text-lightWhite text-darkBlue' />
+                    </IconButton>
                 </div>
             </div>
         </div>
