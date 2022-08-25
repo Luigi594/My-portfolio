@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <div className='h-auto bg-darkBlue text-lightWhite p-14'>
+    <div className='pt-32 h-auto bg-darkBlue text-lightWhite p-14'>
       <div className='w-full p-10 md:text-left sm:text-center'>
           <h2>
               <span className='block text-2xl pb-5'>Hi there 👋 my name is</span>

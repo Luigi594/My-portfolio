@@ -15,7 +15,7 @@ function AboutMe() {
       <div className="container flex flex-col mx-auto items-center mt-12 space-y-10 lg:p-10 md:flex-row">
 
         {/** About me */}
-        <div className='flex flex-col bg-lightBlue rounded-md md:mx-20 md:w-1/2'>
+        <div className='flex flex-col dark:bg-gray-800 rounded-md md:mx-20 md:w-1/2'>
           <div className='flex-col h-fit py-6 px-4 shadow-lg'>
             <h2 className='text-xl font-semibold pb-5'>A little bit about me</h2>
             <p className='text-base'>
@@ -44,37 +44,3 @@ function AboutMe() {
 }
 
 export default AboutMe
-
-
-/** 
- * 
- * 
- * <div className='relative mt-12 px-10'>
-        <div className='flex flex-col md:flex-row'>
-            <div className='block'>
-              
-            </div>
-        </div>
-      </div>
- * <div className='grid lg:grid-cols-2 lg:gap-10 space-x-10'>
-            <div className='block py-6 px-4 bg-lightBlue rounded-sm shadow-md h-fit'>
-                <h1 className='text-xl text-lightWhite font-semibold pb-5'>A little bit about me</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Consectetur dolore saepe atque nesciunt, dignissimos sed amet 
-                    expedita blanditiis officiis fuga nulla natus sit in fugit 
-                    quidem adipisci nam, laboriosam velit.
-
-                    <br />
-                    
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Consectetur dolore saepe atque nesciunt, dignissimos sed amet 
-                    expedita blanditiis officiis fuga nulla natus sit in fugit 
-                    quidem adipisci nam, laboriosam velit.
-                </p>
-            </div>
-            <div>
-                <img src={require('../img/yo.jpg')} className='object-contain h-[654px] w-[511px]' alt="Imagen mía" />
-            </div>
-        </div>
- */

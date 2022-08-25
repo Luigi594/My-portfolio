@@ -36,7 +36,7 @@ function NavBar() {
                     <a href="#" className='text-base font-medium text-lightWhite'>Contact</a>
                 </Popover.Group>
 
-                <div className='hidden md:flex itms-center justify-end md:flex-1 lg:w-0 space-x-4'>
+                <div className='hidden itms-center justify-end lg:w-0 space-x-4 md:flex md:flex-1'>
                     <BedtimeIcon size={24} className='text-darkGray cursor-pointer  hover:text-lightWhite' />
                     <LightModeIcon size={24} className='text-darkGray cursor-pointer  hover:text-lightWhite' />
                 </div>
