@@ -43,11 +43,11 @@ function Projects() {
   
   return (
 
-    <div className='h-auto text-lightWhite p-14'>
+    <div className='h-auto text-darkBlue dark:text-lightWhite p-14'>
 
       {/** Este es el título */}
       <div className='flex w-full items-center justify-evenly'>
-          <hr className='hidden border-1 border-[#F7F8FC] w-1/2 rounded-sm md:block' />
+          <hr className='hidden border-1 border-[#878A99] dark:border-[#F7F8FC] w-1/2 rounded-sm md:block' />
           <h1 className='italic font-[700] text-3xl md:text-center'>My Projects</h1>
       </div>
 
@@ -65,20 +65,21 @@ function Projects() {
 
           {proyectos.map((item) => (
 
-            <div className="relative flex-none max-w-sm h-80 rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div className="relative flex-none max-w-sm h-80 rounded-lg border bg-[#ece5ec] border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700
+             hover:dark:bg-darkGray/[0.2] hover:bg-darkGray/[0.2] transition ease-in-out duration-300">
                 <div className='p-5'>
                   <div className="flex flex-col md:flex-row">
-                    <h2 className='flex-1 text-xl text-ligthGray font-semibold'>
+                    <h2 className='flex-1 text-xl text-darkBlue dark:text-ligthGray font-semibold '>
                       {item.nombre}
                     </h2>
-                    <a href="" className='text-ligthGray hover:text-darkGray transition ease-in-out duration-200 pt-4 md:pt-0'>Enlace de github</a>
+                    <a href="" className='text-darkBlue dark:text-ligthGray hover:dark:text-darkGray hover:text-darkGray transition ease-in-out duration-200 pt-4 md:pt-0'>Enlace de github</a>
                   </div>
-                    <p class="mt-5 font-normal dark:text-gray-400 md:p-4">
+                    <p className="mt-5 font-normal text-lightBlue dark:text-gray-400 md:p-4">
                       {item.descripcion}
                     </p>
 
                     <div className="flex flex-col absolute bottom-5 md:flex-row">
-                      <div className='flex space-x-4 text-sm dark:text-gray-300 font-normal'>
+                      <div className='flex space-x-4 text-sm text-lightBlue dark:text-gray-300 font-normal'>
                         {item.lenguajes.map((lenguaje) => (
                           <p>{lenguaje}</p>
                         ))}

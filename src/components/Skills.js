@@ -19,12 +19,12 @@ function Skills() {
   ]
 
   return (
-    <div className='h-auto text-lightWhite lg:p-14'>
+    <div className='h-auto text-darkBlue dark:text-lightWhite lg:p-14'>
 
       {/** Este es el título */}
       <div className='flex w-full items-center justify-evenly mt-10'>
           <h1 className='italic font-[700] text-3xl md:text-center'>My Skills</h1>
-          <hr className='hidden border-1 border-[#F7F8FC] w-1/2 rounded-sm md:block' />
+          <hr className='hidden border-1 border-[#878A99] dark:border-[#F7F8FC] w-1/2 rounded-sm md:block' />
       </div>
 
       {/** Contenido */}
