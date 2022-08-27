@@ -13,16 +13,16 @@ function ThemeToggle() {
     <div className='transition duration-700 ease-in-out'>
       {theme === 'dark' ? (
         <Icon 
-            icon="ic:round-dark-mode" 
+            icon="ic:baseline-light-mode" 
             width="40"
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
             className='cursor-pointer dark:text-lightWhite text-darkBlue'
          />
       ): (
         <Icon 
-            icon="ic:baseline-light-mode" 
+            icon="ic:round-dark-mode" 
             width="40"
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             className='cursor-pointer dark:text-lightWhite text-darkBlue'
          />
       )}

@@ -27,12 +27,12 @@ function NavBar() {
                     </Popover.Button>
                 </div>
 
-                <Popover.Group as="nav" className='hidden md:flex space-x-10 text-darkBlue dark:text-lightWhite'>
+                <Popover.Group as="nav" className='hidden md:flex space-x-10 text-lg text-darkBlue dark:text-lightWhite'>
                     
-                    <a href="#" className='text-base font-medium  hover:text-darkGray transition ease-in-out duration-200'>About</a>
-                    <a href="#" className='text-base font-medium  hover:text-darkGray transition ease-in-out duration-200'>Skills</a>
-                    <a href="#" className='text-base font-medium  hover:text-darkGray transition ease-in-out duration-200'>Projects</a>
-                    <a href="#" className='text-base font-medium  hover:text-darkGray transition ease-in-out duration-200'>Contact</a>
+                    <a href="#" className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>About</a>
+                    <a href="#" className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Skills</a>
+                    <a href="#" className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Projects</a>
+                    <a href="#" className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Contact</a>
                 </Popover.Group>
 
                 <div className='hidden items-center justify-end lg:w-0 md:flex md:flex-1'>

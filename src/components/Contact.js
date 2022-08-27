@@ -25,13 +25,13 @@ function Contact() {
                     <h1 className='text-3xl font-semibold pb-10 text-center'>Get In Touch</h1>
                     <form>
                         <div className="mb-6">
-                            <input type="text" className='block text-sm rounded-lg h-12 w-full px-4 bg-[#d7cdd7] placeholder-darkBlue dark:placeholder-ligthGray focus:outline-none' placeholder='Your name'  />
+                            <input type="text" className='block text-sm rounded-lg h-12 w-full px-4 bg-[#d7cdd7] dark:bg-lightBlue placeholder-darkBlue dark:placeholder-ligthGray focus:outline-none' placeholder='Your name'  />
                         </div>
                         <div className="mb-6">
-                            <input type="email" className='block text-sm rounded-lg h-12 w-full px-4 bg-[#d7cdd7] placeholder-darkBlue dark:placeholder-ligthGray focus:outline-none' placeholder='Email example@gmail.com'  />
+                            <input type="email" className='block text-sm rounded-lg h-12 w-full px-4 bg-[#d7cdd7] dark:bg-lightBlue placeholder-darkBlue dark:placeholder-ligthGray focus:outline-none' placeholder='Email example@gmail.com'  />
                         </div>
                         <div className="mb-6">
-                            <textarea rows="4" className='block text-sm rounded-lg p-4 w-full bg-[#d7cdd7] placeholder-darkBlue dark:placeholder-ligthGray focus:outline-none' placeholder='Leave your message'></textarea>
+                            <textarea rows="4" className='block text-sm rounded-lg p-4 w-full bg-[#d7cdd7] dark:bg-lightBlue placeholder-darkBlue dark:placeholder-ligthGray focus:outline-none' placeholder='Leave your message'></textarea>
                         </div>
                         <div className="mb-6">
                             <button type="submit" className="focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2.5 
