@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Avatar from '@mui/material/Avatar';
 import ThemeToggle from './Themes/ThemeToggle';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function NavBar() {
 
@@ -13,9 +14,9 @@ function NavBar() {
             <div className='flex justify-between items-center
             py-6 md:justify-start md:space-x-10'>
                 <div className='flex justify-start lg:w-0 lg:flex-1'>
-                    <a href="#">
+                    <Link to={"#"}>
                         <Avatar size={25} color="#DCDFEE" />
-                    </a>
+                    </Link>
                 </div>
 
                 {/** Burger Icon for mobile menu*/}
@@ -29,10 +30,10 @@ function NavBar() {
 
                 <Popover.Group as="nav" className='hidden md:flex space-x-10 text-lg text-darkBlue dark:text-lightWhite'>
                     
-                    <a href="#" className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>About</a>
-                    <a href="#" className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Skills</a>
-                    <a href="#" className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Projects</a>
-                    <a href="#" className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Contact</a>
+                    <Link to={"#about-me"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>About</Link>
+                    <Link to={"#skills"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Skills</Link>
+                    <Link to={"#projects"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Projects</Link>
+                    <Link to={"#contact"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Contact</Link>
                 </Popover.Group>
 
                 <div className='hidden items-center justify-end lg:w-0 md:flex md:flex-1'>
@@ -74,10 +75,11 @@ function NavBar() {
 
                             <div className='py-6 px-5 space-y-6'>
                                 <div className='grid grid-cols-2 gap-y-4 gap-x-8 text-center justify-items-center  text-darkBlue dark:text-lightWhite'>
-                                    <a href="#" className='text-base font-medium  hover:text-darkGray transition ease-in-out duration-200'>About</a>
-                                    <a href="#" className='text-base font-medium  hover:text-darkGray transition ease-in-out duration-200'>Skills</a>
-                                    <a href="#" className='text-base font-medium  hover:text-darkGray transition ease-in-out duration-200'>Projects</a>
-                                    <a href="#" className='text-base font-medium  hover:text-darkGray transition ease-in-out duration-200'>Contact</a>
+                                    
+                                    <Link to={"#about-me"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>About</Link>
+                                    <Link to={"#skills"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Skills</Link>
+                                    <Link to={"#projects"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Projects</Link>
+                                    <Link to={"#contact"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>Contact</Link>
 
                                     <div className='items-center col-span-2 pt-5'>
                                         <ThemeToggle />
