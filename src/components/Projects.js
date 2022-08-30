@@ -45,7 +45,7 @@ function Projects() {
       {/** Here will go all my projects */}
         <div className="flex relative items-center overflow-auto mt-12 flex-nowrap gap-4 px-5 lg:px-0">
 
-          {projects.map(({ id, data: { name, description, github, languages } }) => (
+          {projects.map(({ id, data: { name, description, github, languages, live } }) => (
 
             <CardProjects 
             
@@ -54,6 +54,7 @@ function Projects() {
               description={description}
               github={github}
               languages={languages}
+              live={live}
             />
           ))}
         </div>

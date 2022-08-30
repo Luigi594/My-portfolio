@@ -1,6 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState(false);
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault();
+
+    const templateParams = {
+
+        name: name, 
+        to_name: 'Luis Martínez',
+        email: email, 
+        message: message
+    }
+
+    emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_PUBLIC_KEY)
+    .then((result) => {
+        if(result.status === 200){
+            setName('');
+            setEmail('');
+            setMessage('');
+            setStatus(true);
+        }
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+  }
+
+  /** just to disappear the message when a user sent an email */
+  useEffect(() => {
+
+    if(status){
+        setTimeout(() => {
+            setStatus(false)
+        }, 5000)
+    }
+
+    return () => {
+        clearTimeout();
+    }
+  }, [status])
+
+
   return (
     <div className='h-auto text-darkBlue dark:text-lightWhite p-10 lg:p-14'>
 
@@ -27,26 +75,39 @@ function Contact() {
 
                     {/** Form to send emails */}
                     <form>
+                        {status && (
+                            <p className='text-base md:text-xl mb-6 font-normal animate-pulse text-slate-600 dark:text-indigo-300 text-center'>
+                                Your message has been sent successfully. Thanks for contacting me 🙌
+                            </p>
+                        )}
+
                         <div className="mb-6">
-                            <input type="text" className='block text-sm rounded-lg h-12 w-full px-4 bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
-                             dark:placeholder-ligthGray focus:outline-none' placeholder='Your name'  />
+                            <input type="text" name='name' className='block text-sm rounded-lg h-12 w-full px-4 bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
+                             dark:placeholder-ligthGray focus:outline-none' placeholder='Your name'
+                             value={name} onChange={(e) => setName(e.target.value)} required />
                         </div>
                         <div className="mb-6">
-                            <input type="email" className='block text-sm rounded-lg h-12 w-full px-4 bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
-                             dark:placeholder-ligthGray focus:outline-none' placeholder='Email example@gmail.com'  />
+                            <input type="email" name='email' className='block text-sm rounded-lg h-12 w-full px-4 bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
+                             dark:placeholder-ligthGray focus:outline-none' placeholder='Email example@gmail.com'
+                             value={email} onChange={(e) => setEmail(e.target.value)}  required />
                         </div>
                         <div className="mb-6">
-                            <textarea rows="4" className='block text-sm rounded-lg p-4 w-full bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
-                             dark:placeholder-ligthGray focus:outline-none' placeholder='Leave your message'></textarea>
+                            <textarea rows="4" name='message' className='block text-sm rounded-lg p-4 w-full bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
+                             dark:placeholder-ligthGray focus:outline-none' placeholder='Leave your message'
+                             value={message} onChange={(e) => setMessage(e.target.value)} required/>
                         </div>
-                        <div className="mb-6">
+                        <div className="flex justify-center mb-6">
                             <button type="submit" className="focus:ring-4 focus:outline-none font-semibold rounded-lg text-base px-4 py-2.5 
                             transition ease-in-out duration-300 w-36 md:w-52 text-center text-lightWhite dark:text-darkBlue bg-darkGray
-                             dark:bg-ligthGray hover:bg-lightBlue hover:text-lightWhite  hover:dark:bg-darkBlue hover:dark:text-ligthGray">Submit</button>
+                             dark:bg-ligthGray hover:bg-lightBlue hover:text-lightWhite  hover:dark:bg-darkBlue hover:dark:text-ligthGray"
+                             onClick={handleSubmit}>
+                                Submit
+                            </button>
                         </div>
-                    </form>
+                    </form>                    
                 </div>
             </div>
+
         </div>
     </div>
   )

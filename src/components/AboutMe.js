@@ -16,19 +16,22 @@ function AboutMe() {
         
         {/** Container for my information */}
         <div className='bg-[#F2F3F9] dark:bg-gray-800 h-fit py-8 px-5 rounded-md shadow-lg transition ease-in-out duration-300 hover:dark:shadow-slate-500'>
-          <h2 className='text-xl font-semibold pb-5'>A little bit about me</h2>
+          <h2 className='text-xl font-semibold pb-5'>Who am I?</h2>
           <p className='text-base'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, 
-              veritatis praesentium vitae magni neque recusandae at et sapiente, 
-              natus repellat enim explicabo laboriosam, dolorem ducimus voluptatibus!
-              Sunt tempore aliquid omnis.
+              Hello again, I'm Luis Martínez and I'm getting close to become a Computer
+              Science Engineer. I figured out my passion to the career when I was on 
+              highschool, my last year was definitely my call, because it has made think 
+              of what can be created by using technology and how is helping the entire
+              world. And it's not just programming after all, is to create solutions 
+              that's what I've liked the more.
 
               <br /> <br />
 
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, 
-              veritatis praesentium vitae magni neque recusandae at et sapiente, 
-              natus repellat enim explicabo laboriosam, dolorem ducimus voluptatibus!
-              Sunt tempore aliquid omnis.
+              Lately, since 2021 year, I've been pushing myself to learn more beyond my clasess, 
+              to improve knowledge, to challenge me, by watching tutorials, reading blogs, and
+              all has been to be able to write better code and to understand how could I apply those concepts on a 
+              real-world scenario. My focus these days is to get prepare myself to create digital solutions
+              for the users and give them the better experience.
             </p>
         </div>
 
