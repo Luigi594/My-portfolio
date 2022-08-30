@@ -25,20 +25,20 @@ function Projects() {
   
   return (
 
-    <div className='h-auto text-darkBlue dark:text-lightWhite lg:p-14'>
+    <div className='contentProjects'>
 
       {/** This is the title */}
-      <div className='flex w-full items-center justify-evenly pt-12'>
-          <hr className='hidden border-1 border-[#878A99] dark:border-[#F7F8FC] w-1/2 rounded-sm md:block' />
-          <h1 className='italic font-[700] text-3xl md:text-center'>My Projects</h1>
+      <div className='titleContent'>
+          <hr className='lineContent' />
+          <h1 className='textContent'>My Projects</h1>
       </div>
 
        {/** This is just a container for some text */}
-       <div className='p-5 lg:p-10'>
-          <p className='text-xl font-normal mt-10 text-center lg:text-left'>
-              Here you will find some significant projects I built throughout my career.
-              Also other of them were built from my own for self-taught and to
-              increase my knowledge.
+       <div className='contentDescription'>
+          <p className='textDescription'>
+            Here you will find the two biggest projects I built throughout my career, 
+            like CamiDental and SorBurgers app, the other ones have them were built from my 
+            own in my free time for self-taught.
           </p>
         </div>
       

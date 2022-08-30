@@ -16,8 +16,10 @@ function Footer() {
                   hover:scale-110 hover:cursor-pointer transition ease-in-out duration-300' rel='noreferrer'>
                   <Icon icon={"akar-icons:github-fill"} width={"45"}  />
                 </a>
-                <Icon icon={"bi:linkedin"} className='text-darkBlue dark:text-ligthGray hover:scale-110 hover:cursor-pointer 
-                transition ease-in-out duration-300' width={"45"} />
+
+                {/** For future */}
+                {/* <Icon icon={"bi:linkedin"} className='text-darkBlue dark:text-ligthGray hover:scale-110 hover:cursor-pointer 
+                transition ease-in-out duration-300' width={"45"} /> */}
             </div>
 
             {/** Scroll to top icon */}
@@ -26,7 +28,7 @@ function Footer() {
             </Link>
         </div>
         
-        <span className="block text-sm text-gray-500 text-center dark:text-gray-400">
+        <span className="block text-sm text-gray-700  text-center dark:text-gray-400">
             © 2022 Luis Martínez. All Rights Reserved.
         </span>
     </footer>

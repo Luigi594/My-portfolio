@@ -14,9 +14,6 @@ module.exports = {
         darkGray: "#878A99",
         ligthGray: "#DCDFEE"
       },
-      fontFamily: {
-        body: ['Nunito', 'sans-serif']
-      }
     },
   },
   plugins: [],

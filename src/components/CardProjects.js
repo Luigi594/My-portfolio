@@ -26,12 +26,12 @@ function CardProjects({ name, description, github, languages, live }) {
                     )}
                 </div>
             </div>
-            <p className="font-normal text-lightBlue dark:text-gray-400 md:p-4">
+            <p className="text-base font-normal text-lightBlue dark:text-gray-400 md:p-4">
                 {description}
             </p>
 
             <div className="flex flex-row absolute bottom-5">
-                <div className='flex space-x-4 text-sm text-lightBlue dark:text-gray-300 font-normal'>
+                <div className='flex space-x-3 text-sm text-darkBlue dark:text-gray-300 font-normal px-2'>
                     {Object.entries(languages).map(([key, value]) => (
                         <p key={key}>
                             {value}

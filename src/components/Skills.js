@@ -26,17 +26,17 @@ function Skills() {
   }, [])
 
   return (
-    <div className='h-auto text-darkBlue dark:text-lightWhite lg:p-14'>
+    <div className='parentContent'>
 
       {/** This is the title */}
-      <div className='flex w-full items-center justify-evenly pt-12'>
-          <h1 className='italic font-[700] text-3xl md:text-center'>My Skills</h1>
-          <hr className='hidden border-1 border-[#878A99] dark:border-[#F7F8FC] w-1/2 rounded-sm md:block' />
+      <div className='titleContent'>
+          <h1 className='textContent'>My Skills</h1>
+          <hr className='lineContent' />
       </div>
 
       {/** This is just a little container for some text */}
-      <div className='flex items-center p-10'>
-        <h2 className='text-xl font-normal mt-12 text-center lg:text-left'>These are some technologies I've worked with:</h2>
+      <div className='contentDescription'>
+        <h2 className='textDescription'>These are some technologies I've worked with:</h2>
       </div>
 
       {/** Here will go the container for tecnologies */}

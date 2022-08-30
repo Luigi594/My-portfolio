@@ -11,8 +11,8 @@ function HeroSection() {
           <p className='text-base md:text-lg'>
               I’m a Computer Science Engineer who has been 
               passionate about the web application development 
-              <span className='sm:block'>and the
-              self-taught throughout the career.</span>
+              <span className='sm:block'>and applying myself with the
+              self-taught throughout my career.</span>
           </p>
       </div>
     </div>
