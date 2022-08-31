@@ -26,7 +26,7 @@ function CardProjects({ name, description, github, languages, live }) {
                     )}
                 </div>
             </div>
-            <p className="text-base font-normal text-lightBlue dark:text-gray-400 md:p-4">
+            <p className="text-base mt-3 font-normal text-lightBlue dark:text-gray-400 md:mt-0 md:p-4">
                 {description}
             </p>
 
