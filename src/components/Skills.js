@@ -27,7 +27,7 @@ function Skills() {
 
   return (
     <div className='parentContent'>
-
+      
       {/** This is the title */}
       <div className='titleContent'>
           <h1 className='textContent'>My Skills</h1>

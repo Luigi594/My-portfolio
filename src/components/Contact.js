@@ -17,7 +17,8 @@ function Contact() {
 
         name: Yup.string()
         .min(5, 'Must be at least 5 characters or more')
-        .required('Field name is required'),
+        .required('Field name is required')
+        .matches(/^[a-zA-Z\s]*$/, 'Name must be only contain letters'),
 
         email: Yup.string()
         .email('Invalid email format')
@@ -105,7 +106,7 @@ function Contact() {
 
                         <div className="mb-6">
                             <input type="text" name='name' className='block text-sm rounded-lg h-12 w-full px-4 bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
-                             dark:placeholder-ligthGray focus:outline-none' placeholder='Your name'
+                            dark:placeholder-ligthGray focus:outline-none' placeholder='Your name'
                             
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
@@ -119,7 +120,7 @@ function Contact() {
 
                         <div className="mb-6">
                             <input type="email" name='email' className='block text-sm rounded-lg h-12 w-full px-4 bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
-                             dark:placeholder-ligthGray focus:outline-none' placeholder='Email example@gmail.com'
+                            dark:placeholder-ligthGray focus:outline-none' placeholder='Email example@gmail.com'
                             
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
@@ -133,7 +134,7 @@ function Contact() {
 
                         <div className="mb-6">
                             <textarea rows="4" name='message' className='block text-sm rounded-lg p-4 w-full bg-ligthGray dark:bg-lightBlue placeholder-darkBlue
-                             dark:placeholder-ligthGray focus:outline-none' placeholder='Leave your message'
+                            dark:placeholder-ligthGray focus:outline-none' placeholder='Leave your message'
                             
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
@@ -147,15 +148,14 @@ function Contact() {
                         <div className="flex justify-center mb-6">
                             <button type="submit" className="focus:ring-4 focus:outline-none font-semibold rounded-lg text-base px-4 py-2.5 
                             transition ease-in-out duration-300 w-36 md:w-52 text-center text-lightWhite dark:text-darkBlue bg-darkGray
-                             dark:bg-ligthGray hover:bg-lightBlue hover:text-lightWhite  hover:dark:bg-darkBlue hover:dark:text-ligthGray"
-                             onClick={formik.handleSubmit}>
+                            dark:bg-ligthGray hover:bg-lightBlue hover:text-lightWhite  hover:dark:bg-darkBlue hover:dark:text-ligthGray"
+                            onClick={formik.handleSubmit}>
                                 Submit
                             </button>
                         </div>
                     </form>                    
                 </div>
             </div>
-
         </div>
     </div>
   )

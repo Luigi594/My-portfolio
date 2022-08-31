@@ -1,5 +1,4 @@
 import React from 'react'
-
 function AboutMe() {
   
   return (
@@ -36,7 +35,7 @@ function AboutMe() {
 
         {/** Container for the image */}
         <div>
-          <img src={require('../img/yo.jpg')} className='max-h-full lg:h-[500px] ml-auto' alt="Imagen mia" />
+          <img src={require('../img/profile_2.webp')} className='rounded-sm lg:h-[500px] ml-auto' alt="Imagen mia" />
         </div>
       </div>
     </div>

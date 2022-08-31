@@ -31,8 +31,7 @@ function Footer() {
         <span className="block text-sm text-gray-700  text-center dark:text-gray-400">
             © 2022 Luis Martínez. All Rights Reserved.
         </span>
-    </footer>
-      
+      </footer>
     </div>
   )
 }

@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import Avatar from '@mui/material/Avatar';
 import ThemeToggle from './Themes/ThemeToggle';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -15,19 +12,24 @@ function NavBar() {
             py-6 md:justify-start md:space-x-10'>
                 <div className='flex justify-start lg:w-0 lg:flex-1'>
                     <Link to={"#"}>
-                        <Avatar size={25} color="#DCDFEE" />
+                        <img 
+                            className='w-12 h-12 rounded-full object-cover'
+                            src={require('../img/profile_2.webp')}
+                            alt="profile"
+                        />
                     </Link>
                 </div>
 
                 {/** Burger Icon for mobile menu*/}
                 <div className="md:hidden">
-                    <Popover.Button className="bg-lightWhite dark:bg-darkBlue p-2 inline-flex items-center 
-                    justify-center text-darkBlue dark:text-ligthGray focus:outline-none">
-                        
-                        <MenuIcon className="h-6 w-6" aria-hidden="true"  />
+                    <Popover.Button className='bg-lightWhite dark:bg-darkBlue rounded-md p-2 inline-flex items-center justify-center
+                    text-darkBlue dark:text-ligthGray focus:outline-none'>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 font-extrabold">
+                            <path fillRule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clipRule="evenodd" />
+                        </svg>
                     </Popover.Button>
                 </div>
-
+                
                 <Popover.Group as="nav" className='hidden md:flex space-x-10 text-lg text-darkBlue dark:text-lightWhite'>
                     
                     <Link to={"#about-me"} className='font-medium  hover:text-darkGray transition ease-in-out duration-200'>About</Link>
@@ -61,14 +63,21 @@ function NavBar() {
                         <div className='pt-5 pb-6 px-5'>
                             <div className='flex items-center justify-between'>
                                 <div>
-                                    <Avatar size={25} color="#DCDFEE" />
+                                    <Link to={"#"}>
+                                        <img 
+                                            className='w-12 h-12 rounded-full object-cover'
+                                            src={require('../img/profile_2.webp')}
+                                            alt="profile"
+                                        />
+                                    </Link>
                                 </div>
 
                                 <div className='-mr-2'>
                                     <Popover.Button className='bg-lightWhite dark:bg-darkBlue rounded-md p-2 inline-flex items-center justify-center
                                     text-darkBlue dark:text-ligthGray focus:outline-none'>
-
-                                        <CloseIcon className='h-6 w-6' />
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 font-semibold">
+                                            <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 011.06 0L12 10.94l5.47-5.47a.75.75 0 111.06 1.06L13.06 12l5.47 5.47a.75.75 0 11-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 01-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 010-1.06z" clipRule="evenodd" />
+                                        </svg>
                                     </Popover.Button>
                                 </div>
                             </div>
