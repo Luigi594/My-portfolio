@@ -17,9 +17,11 @@ function Footer() {
                   <Icon icon={"akar-icons:github-fill"} width={"45"}  />
                 </a>
 
-                {/** For future */}
-                {/* <Icon icon={"bi:linkedin"} className='text-darkBlue dark:text-ligthGray hover:scale-110 hover:cursor-pointer 
-                transition ease-in-out duration-300' width={"45"} /> */}
+                <a href="https://www.linkedin.com/in/luis-martinez-padilla/" target={"_blank"} className='text-darkBlue dark:text-ligthGray 
+                  hover:scale-110 hover:cursor-pointer transition ease-in-out duration-300' rel='noreferrer'>
+                  <Icon icon={"bi:linkedin"}  width={"45"} />
+                </a>
+
             </div>
 
             {/** Scroll to top icon */}

@@ -1,4 +1,6 @@
 import React from 'react'
+import CVSpanish from '../pdf/CVMartínez.pdf'
+import CvEnglish from '../pdf/CV-Martinez-English.pdf'
 
 function HeroSection() {
   return (
@@ -14,6 +16,18 @@ function HeroSection() {
               <span className='sm:block'> and applying myself with the
               self-taught throughout my career.</span>
           </p>
+
+          <div className="flex flex-col w-fit mt-4 mx-auto space-x-4 md:mx-0 md:flex-row">
+            <button className='bg-gray-700 dark:bg-indigo-200 text-indigo-200 dark:text-gray-800 p-3 rounded-lg transition-all ease-in-out
+            dark:hover:bg-gray-800 hover:bg-indigo-200 hover:text-gray-800 dark:hover:text-indigo-200 shadow-md dark:hover:shadow-md hover:shadow-indigo-300'>
+              <a href={CVSpanish} target="_blank" rel='noreferrer'>My resume in Spanish</a>
+            </button>
+
+            <button className='bg-gray-700 dark:bg-indigo-200 text-indigo-200 dark:text-gray-800 p-3 rounded-lg transition-all ease-in-out
+            dark:hover:bg-gray-800 hover:bg-indigo-200 hover:text-gray-800 dark:hover:text-indigo-200 shadow-md dark:hover:shadow-md hover:shadow-indigo-300'>
+              <a href={CvEnglish} target="_blank" rel='noreferrer'>My resume in Spanish</a>
+            </button>
+          </div>
       </div>
     </div>
   )

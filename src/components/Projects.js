@@ -37,8 +37,8 @@ function Projects() {
       <div className='contentDescription'>
           <p className='textDescription'>
             Here you will find the two biggest projects I built throughout my career, 
-            like CamiDental and SorBurgers app, the other ones were built on my own in my 
-            spare time, by self-learning.
+            like CamiDental, which was a collaborative project with other people
+            and SorBurgers app, the other ones were built on my own in my spare time, by self-learning.
           </p>
         </div>
       

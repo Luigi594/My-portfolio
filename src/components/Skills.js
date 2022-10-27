@@ -42,11 +42,12 @@ function Skills() {
       {/** Here will go the container for tecnologies */}
       <div className="grid grid-cols-2 p-10 gap-5 md:grid-cols-4">
 
-        {stacks.map(({ id, data: { icon } }) => (
+        {stacks.map(({ id, data: { icon, title } }) => (
 
           <GridSkills 
             key={id}
-            textIcon={icon} />
+            textIcon={icon}
+            title={title} />
         ))}
       </div>
     </div>
