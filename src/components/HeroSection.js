@@ -17,7 +17,7 @@ function HeroSection() {
               self-taught throughout my career.</span>
           </p>
 
-          <div className="flex flex-col w-fit mt-4 mx-auto space-x-4 md:mx-0 md:flex-row">
+          <div className="flex flex-col w-fit mt-4 mx-auto justify-center space-x-0 space-y-3 md:space-y-0 md:mx-0 md:flex-row md:space-x-4">
             <button className='bg-gray-700 dark:bg-indigo-200 text-indigo-200 dark:text-gray-800 p-3 rounded-lg transition-all ease-in-out
             dark:hover:bg-gray-800 hover:bg-indigo-200 hover:text-gray-800 dark:hover:text-indigo-200 shadow-md dark:hover:shadow-md hover:shadow-indigo-300'>
               <a href={CVSpanish} target="_blank" rel='noreferrer'>My resume in Spanish</a>
@@ -25,7 +25,7 @@ function HeroSection() {
 
             <button className='bg-gray-700 dark:bg-indigo-200 text-indigo-200 dark:text-gray-800 p-3 rounded-lg transition-all ease-in-out
             dark:hover:bg-gray-800 hover:bg-indigo-200 hover:text-gray-800 dark:hover:text-indigo-200 shadow-md dark:hover:shadow-md hover:shadow-indigo-300'>
-              <a href={CvEnglish} target="_blank" rel='noreferrer'>My resume in Spanish</a>
+              <a href={CvEnglish} target="_blank" rel='noreferrer'>My resume in English</a>
             </button>
           </div>
       </div>
