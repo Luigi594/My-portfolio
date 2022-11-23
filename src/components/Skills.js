@@ -3,6 +3,7 @@ import GridSkills from "./GridSkills";
 import db from "../Firebase";
 import { onSnapshot, collection, query, orderBy } from "firebase/firestore";
 import { motion } from "framer-motion";
+import Title from "./Content/Title";
 
 function Skills() {
   const [stacks, setStacks] = useState([]);
@@ -25,25 +26,11 @@ function Skills() {
   return (
     <div className="parentContent">
       {/** This is the title */}
-      <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2 }}
-        className="titleContent">
-        <h1 className="textContent">My Skills</h1>
-        <hr className="lineContent" />
-      </motion.div>
-
-      {/** This is just a little container for some text */}
-      <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2 }}
-        className="contentDescription">
-        <h2 className="textDescription">
-          These are some technologies I've worked with:
-        </h2>
-      </motion.div>
+      <Title
+        direccionLeft={true}
+        text={"My Skills"}
+        subtext={"These are some technologies I've worked with:"}
+      />
 
       {/** Here will go the container for tecnologies */}
       <div className="grid mx-auto grid-cols-2 p-10 max-w-6xl md:grid-cols-4">

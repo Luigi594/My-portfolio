@@ -29,7 +29,7 @@ function HeroSection() {
         <div className="flex flex-col w-fit mt-4 mx-auto justify-center space-x-0 space-y-3 md:space-y-0 md:mx-0 md:flex-row md:space-x-4">
           <motion.button
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "just", stiffness: 400, damping: 10 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
             className="bg-gray-700 dark:bg-indigo-200 text-indigo-200 dark:text-gray-800 p-3 rounded-lg
             dark:hover:bg-gray-800 hover:bg-indigo-200 hover:text-gray-800 dark:hover:text-indigo-200 shadow-md dark:hover:shadow-md hover:shadow-indigo-300">
             <a href={CVSpanish} target="_blank" rel="noreferrer">

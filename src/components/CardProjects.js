@@ -5,8 +5,9 @@ import { motion } from "framer-motion";
 function CardProjects({ name, description, github, languages, live }) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ x: 100 }}
+      whileInView={{ x: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 1.2 }}
       className="relative flex-none max-w-md h-80 rounded-lg border opacity-60 bg-[#F2F3F9] border-gray-200 shadow-md
        dark:bg-gray-800 dark:border-gray-700 hover:opacity-100 hover:bg-lightWhite transition 

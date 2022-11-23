@@ -7,14 +7,17 @@ function GridSkills({ textIcon, title, direcctionLeft }) {
     <motion.div
       initial={{ opacity: 0, x: direcctionLeft ? -100 : 100 }}
       whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       transition={{ duration: 1.2 }}
-      className="mx-auto pb-7 transition ease-in-out duration-200  hover:scale-110">
+      className="mx-auto pb-10">
       {textIcon && (
         <>
           <Icon
             icon={textIcon}
             width="80"
-            className={`${textIcon} === 'logos:mongodb-icon' ? h-20 : '' `}
+            className={`
+            transition ease-in-out duration-150 hover:scale-110
+            ${textIcon} === 'logos:mongodb-icon' ? h-20 : '' `}
           />
           <p className="text-center pt-2 font-semibold">{title}</p>
         </>

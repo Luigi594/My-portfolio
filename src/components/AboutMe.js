@@ -1,30 +1,27 @@
 import React from "react";
 import Image from "../img/profile_2.webp";
+import Title from "./Content/Title";
 import { motion } from "framer-motion";
+import { animations } from "../utils/animations";
 
 function AboutMe() {
   return (
     <div className="parentContent">
       {/** This is the title */}
-      <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.2 }}
-        className="titleContent">
-        <hr className="lineContent" />
-        <h1 className="textContent">About Me</h1>
-      </motion.div>
+      <Title text={"About Me"} />
 
       {/** This is all the content */}
       <div
         className="flex flex-col-reverse items-center justify-evenly p-10 mt-12 mx-auto
         space-x-0 h-fit max-w-full md:space-y-0 md:flex-row md:space-x-4">
         <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2 }}
-          className="h-fit max-w-xl py-8 px-5 mt-10 rounded-md shadow-lg transition ease-in-out duration-300 
-        hover:dark:shadow-slate-500 bg-[#F2F3F9] dark:bg-gray-800/40 md:mt-0">
+          variants={animations}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true }}
+          className="h-fit max-w-xl py-8 px-5 mt-10 rounded-md shadow-lg shadow-darkBlue/25 dark:shadow-slate-300/30 
+           transition ease-in-out duration-300 hover:dark:shadow-slate-500
+            bg-[#F2F3F9] dark:bg-darkBlue md:mt-0">
           <h2 className="text-2xl font-semibold pb-5">
             Get me know a{" "}
             <span className="underline decoration-lightBlue">litlte</span>
@@ -50,6 +47,8 @@ function AboutMe() {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
+          whileHover={{ opacity: 0.8 }}
+          viewport={{ once: true }}
           transition={{ duration: 1.2 }}
           className="flex-shrink-0">
           <img

@@ -1,54 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-
-  .parentContent{
-    @apply h-auto text-darkBlue dark:text-lightWhite mt-12 lg:p-14 md:mt-0
+@layer components {
+  .parentContent {
+    @apply h-auto text-darkBlue dark:text-lightWhite mt-12 lg:p-14 md:mt-0;
   }
 
-  .contentProjects{
-    @apply h-auto text-darkBlue dark:text-lightWhite mt-12 px-10 lg:p-14 md:mt-0
+  .contentProjects {
+    @apply h-auto text-darkBlue dark:text-lightWhite mt-12 px-10 lg:p-14 md:mt-0;
   }
 
-  .titleContent{
-    @apply flex w-full items-center justify-evenly pt-12
+  .titleContent {
+    @apply flex w-full items-center justify-evenly pt-12;
   }
 
-  .lineContent{
-    @apply hidden border-[#878A99] w-1/2 rounded-sm md:block dark:border-[#F7F8FC]
+  .lineContent {
+    @apply hidden border-[#878A99] w-1/2 rounded-sm md:block dark:border-[#F7F8FC];
   }
 
-  .textContent{
-    @apply italic font-[700] text-3xl text-center md:text-center
+  .textContent {
+    @apply italic font-[700] text-3xl text-center md:text-center;
   }
 
-  .contentDescription{
-    @apply p-5 lg:p-10
+  .contentDescription {
+    @apply p-5 lg:p-10;
   }
 
-  .textDescription{
-    @apply text-xl font-normal mt-12 text-center lg:text-left
+  .textDescription {
+    @apply text-xl font-normal mt-12 text-center lg:text-left;
   }
 }
 
-*{
-  margin: 0
+* {
+  margin: 0;
 }
 
-html{
-
+html {
   scrollbar-width: thin;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
 }
 
 body {
- 
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

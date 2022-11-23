@@ -8,16 +8,24 @@ function NavBar() {
   return (
     <Popover className="fixed top-0 left-0 right-0 z-50 shadow-md bg-lightWhite dark:bg-darkBlue">
       <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.6, ease: [0, 0.71, 0.2, 1.01] }}
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, delay: 0.6, ease: [0, 0.71, 0.2, 1.01] }}
         className="max-w-7xl mx-auto px-4 sm:px-6">
         <div
           className="flex justify-between items-center
             py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to={"#"}>
-              <img
+              <motion.img
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
+                transition={{
+                  type: "keyframes",
+                  stiffness: 400,
+                  damping: 17,
+                  duration: 0.2,
+                }}
                 className="w-12 h-12 rounded-full object-cover"
                 src={require("../img/profile_2.webp")}
                 alt="profile"
@@ -49,22 +57,22 @@ function NavBar() {
             className="hidden md:flex space-x-10 text-lg text-darkBlue dark:text-lightWhite">
             <Link
               to={"#about-me"}
-              className="font-medium  hover:text-darkGray transition ease-in-out duration-200">
+              className="font-medium  hover:text-darkGray hover:scale-95 transition ease-in-out duration-200">
               About
             </Link>
             <Link
               to={"#skills"}
-              className="font-medium  hover:text-darkGray transition ease-in-out duration-200">
+              className="font-medium  hover:text-darkGray hover:scale-95 transition ease-in-out duration-200">
               Skills
             </Link>
             <Link
               to={"#projects"}
-              className="font-medium  hover:text-darkGray transition ease-in-out duration-200">
+              className="font-medium  hover:text-darkGray hover:scale-95 transition ease-in-out duration-200">
               Projects
             </Link>
             <Link
               to={"#contact"}
-              className="font-medium  hover:text-darkGray transition ease-in-out duration-200">
+              className="font-medium  hover:text-darkGray hover:scale-95 transition ease-in-out duration-200">
               Contact
             </Link>
           </Popover.Group>
