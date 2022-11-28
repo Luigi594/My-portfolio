@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 function GridSkills({ textIcon, title, direcctionLeft }) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: direcctionLeft ? -100 : 100 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial={{ opacity: 0, y: !direcctionLeft ? 100 : -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 1.2 }}
       className="mx-auto pb-10">

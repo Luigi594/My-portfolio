@@ -1,27 +1,10 @@
-import React, { useEffect, useState } from "react";
-import db from "../Firebase";
-import { onSnapshot, collection, query, orderBy } from "firebase/firestore";
+import React from "react";
 import CardProjects from "./CardProjects";
-import { motion } from "framer-motion";
 import Title from "./Content/Title";
+import useFetchData from "../hooks/useFetchData";
 
 function Projects() {
-  const [projects, setProjects] = useState([]);
-
-  // pulling the projects from the db
-  useEffect(() => {
-    const reference = collection(db, "Projects");
-    const Query = query(reference, orderBy("timestamp", "asc"));
-
-    onSnapshot(Query, (snapshot) => {
-      setProjects(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          data: doc.data(),
-        }))
-      );
-    });
-  }, []);
+  const { data } = useFetchData("Projects", "timestamp");
 
   return (
     <div className="contentProjects">
@@ -36,7 +19,7 @@ function Projects() {
 
       {/** Here will go all my projects */}
       <div className="flex relative items-center overflow-auto mt-10 flex-nowrap gap-4 px-5 lg:px-0">
-        {projects.map(
+        {data.map(
           ({ id, data: { name, description, github, languages, live } }) => (
             <CardProjects
               key={id}
