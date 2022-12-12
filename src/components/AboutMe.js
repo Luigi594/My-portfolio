@@ -24,7 +24,7 @@ function AboutMe() {
             bg-[#F2F3F9] dark:bg-darkBlue md:mt-0">
           <h2 className="text-2xl font-semibold pb-5">
             Get me know a{" "}
-            <span className="underline decoration-lightBlue">litlte</span>
+            <span className="underline decoration-lightBlue">little</span>
           </h2>
 
           <p className="text-base">

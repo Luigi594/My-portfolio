@@ -71,7 +71,7 @@ function Contact() {
   }, [status]);
 
   return (
-    <div className="parentContent mt-14 lg:mt-0">
+    <div className="parentContent mt-16 lg:mt-0">
       {/** This is the title */}
       <Title
         direccionLeft={true}
