@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
-import { footerAnimation } from "../utils/animations";
+import { descriptionAndFooterAnimation } from "../utils/animations";
 
 function Footer() {
   return (
@@ -15,7 +15,7 @@ function Footer() {
       />
 
       <motion.footer
-        variants={footerAnimation}
+        variants={descriptionAndFooterAnimation}
         initial={"hidden"}
         whileInView={"show"}
         viewport={{ once: true }}

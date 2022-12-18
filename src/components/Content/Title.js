@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { titleAnimations, descriptionAnimation } from "../../utils/animations";
+import {
+  titleAnimations,
+  descriptionAndFooterAnimation,
+} from "../../utils/animations";
 
 function Title({ direccionLeft, text, subtext }) {
   return (
@@ -26,7 +29,7 @@ function Title({ direccionLeft, text, subtext }) {
 
       {subtext && (
         <motion.div
-          variants={descriptionAnimation}
+          variants={descriptionAndFooterAnimation}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: true }}

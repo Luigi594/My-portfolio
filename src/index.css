@@ -6,11 +6,11 @@
 
 @layer components {
   .parentContent {
-    @apply h-auto text-darkBlue dark:text-lightWhite mt-12 lg:p-14 md:mt-0;
+    @apply max-w-full h-auto text-darkBlue dark:text-lightWhite mt-12 lg:p-14 md:mt-0;
   }
 
   .contentProjects {
-    @apply h-auto text-darkBlue dark:text-lightWhite mt-12 px-10 lg:p-14 md:mt-0;
+    @apply max-w-full h-auto text-darkBlue dark:text-lightWhite mt-12 px-10 lg:p-14 md:mt-0;
   }
 
   .titleContent {
