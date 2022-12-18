@@ -45,11 +45,11 @@ function AboutMe() {
 
         {/** image */}
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          whileHover={{ opacity: 0.8 }}
+          variants={animations}
+          initial="hidden"
+          whileInView={"show"}
+          whileHover={{ scale: 0.9 }}
           viewport={{ once: true }}
-          transition={{ duration: 1.2 }}
           className="flex-shrink-0">
           <img
             className="w-60 h-60 rounded-full object-cover md:mb-0 
